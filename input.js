@@ -11,8 +11,12 @@ const handleUserInput = (key) => {
     connection.write('Move: down');
   } else if (key === 'd') {
     connection.write('Move: right');
+  } else if (key === 'r') {
+    connection.write('Say: outta my way');
+  } else if (key === 'q') {
+    connection.write('Say: I\'m so looong');
   }
-}
+};
 /**
  * Setup User Interface 
  * Specifically, so that we can handle user input via stdin
